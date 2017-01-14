@@ -1,0 +1,51 @@
+<!doctype html>
+<html>
+	<head>
+		<link rel="stylesheet" type="text/css" href="style.css">
+		<script src="js/jquery.js"></script>
+		<script src="js/script.js"></script>
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0"/>
+		<title>Digit Identifier</title>
+	</head>
+	<body>
+		<div class="container">
+			<h1><span>Digit</span> Identifier</h1>
+			<div id="box-1" class="box">
+				<h2>Upload Photo</h2>
+				<div class="box-content">
+					<input type="file" id="upload" accept="image/*">
+				</div>
+			</div>
+			<div id="box-2" class="box">
+				<h2>Automatic Crop</h2>
+				<div class="box-content">
+					<span class="status">Waiting for upload ...</span>
+					<div class="preview">
+						Original:
+						<img id="preview" />
+					</div>
+					<div class="preview">
+						<div class="col">
+							Resized: 
+							<canvas id="canvas" width="32" height="32" />
+						</div>
+						<div class="col">
+							Greyscale:
+							<canvas id="canvas_bw" width="32" height="32" />
+						</div>
+					</div>
+				</div>
+			</div>
+			<div id="box-3" class="box">
+				<h2>Identify</h2>
+				<div class="box-content">
+					<span class="status">Waiting for upload ...</span>
+					<div class="prediction"></div>
+					<div id="bar-1" class="bar"></div>
+					<div id="bar-2" class="bar"></div>
+					<div id="bar-3" class="bar"></div>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
