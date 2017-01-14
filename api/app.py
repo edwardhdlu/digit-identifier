@@ -2,8 +2,10 @@ import tensorflow as tf
 import numpy as np
 import os
 from flask import Flask, request
+from flask_cors import CORS, cross_origin
 
 app = Flask(__name__)
+CORS(app)
 
 with app.app_context():
 	x = tf.placeholder(tf.float32, shape=[None, 1024])
