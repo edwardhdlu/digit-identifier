@@ -37,6 +37,8 @@ $(document).ready(function() {
 				$("#box-2 .status").hide();
 				$("#box-3 .status").text("Identifying ...")
 
+				$("html, body").animate({ scrollTop: $(document).height() }, 1000);
+
 				var w = img.width;
 				var h = img.height;
 				var bound = Math.min(w, h);

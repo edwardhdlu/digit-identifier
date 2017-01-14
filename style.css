@@ -139,7 +139,7 @@ img {
 }
 
 .bar {
-  width: 100%;
+  width: 0%;
   padding: 8px 12px;
   background-color: #ef5350;
   color: #2f2f2f;
@@ -147,6 +147,7 @@ img {
   box-sizing: border-box;
   min-width: 102px;
   display: none;
+  transition: width 0.5s;
 }
 
 #bar-1 {
